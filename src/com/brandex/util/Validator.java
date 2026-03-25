@@ -25,7 +25,9 @@ public class Validator {
         if (name == null || name.trim().isEmpty()) {
             return false;
         }
-        return name.matches(NAME_REGEX);
+		/* matches() searches a string for a match against a regular expression, 
+		 * and returns the matches*/
+        return name.matches(NAME_REGEX); 
     }
 
     public static boolean isValidEmail(String email) {
